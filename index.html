@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="estilo.css">
+		<script type="text/javascript" href="bootstrap.js"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		
+		<script type="text/javascript" src="jquery.js"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function(){
+				
+				$('button').click(function(){
+					var x=document.body.style.backgroundColor;
+					$('body').css("background-color","black");
+					$('h2').css("color","orange");
+					$('img').css("border","solid 2px orange");
+					$('label').css("color","orange");
+					$('footer').css("background-color","black");
+					$('p').css("color","orange");
+					$('a').css("color","orange");
+					$('a').css("background-color","black");
+					if (x=="black") {
+					$('body').css("background-color","white");
+					$('h2').css("color","black");
+					$('img').css("border","none");
+					$('label').css("color","black");
+					$('footer').css("background-color","green");
+					$('p').css("color","black");
+					$('a').css("color","black");
+					$('a').css("background-color","green");
+					}
+				});
+			
+
+
+			});
+			
+		</script>
+		
+	</head>
+	
+	<body>
+		
+	  		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	   			<a class="navbar-brand" href="#">IFTech Day</a>
+	   			<button  alt="alto contraste" onclick="altoContraste()">Alto contraste</button>
+	 		</nav>
+			
+			<div class="div_principal">
+			<img src="img_principal.png" height="300" class="img-fluid" alt="Imagem chamando para o evento">
+			</div>
+
+			<h2>Cursos do dia</h2>
+			<section>
+				<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+				  <div class="carousel-inner">
+				    <div class="carousel-item active">
+				      <img class="d-block w-100" src="1.jpg" alt="primeira imagem do slide chamando para o curso de tanannan">
+				    </div>
+				    <div class="carousel-item">
+				      <img class="d-block w-100" src="2.png" alt="segunda imagem do slide chamando para o curso de tanannan">
+				    </div>
+				    <div class="carousel-item">
+				      <img class="d-block w-100" src="3.png" alt="terceira imagem do slide chamando para o curso de tanannan">
+				    </div>
+				  </div>
+				  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+				    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				    <span class="sr-only">Previous</span>
+				  </a>
+				  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+				    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				    <span class="sr-only">Next</span>
+				  </a>
+				</div>
+			</section>
+			<h2>Agenda</h2>
+			<div class="list-group agenda">
+			  <a href="#" class="list-group-item list-group-item-action" alt="Horário do curso: 00:00 nome do curso: nome do curso link: inscreva-se" >00:00 - 00:00 Nome do curso - Inscreva-se</a>
+			  <a href="#" class="list-group-item list-group-item-action list-group-item-primary" alt="Horário do curso: 00:00 nome do curso: nome do curso link: inscreva-se">00:00 - 00:00 Nome do curso - Inscreva-se</a>
+			  <a href="#" class="list-group-item list-group-item-action list-group-item-secondary" alt="Horário do curso: 00:00 nome do curso: nome do curso link: inscreva-se">00:00 - 00:00 Nome do curso - Inscreva-se</a>
+			  <a href="#" class="list-group-item list-group-item-action list-group-item-success" alt="Horário do curso: 00:00 nome do curso: nome do curso link: inscreva-se">00:00 - 00:00 Nome do curso - Inscreva-se</a>
+			  <a href="#" class="list-group-item list-group-item-action list-group-item-danger" alt="Horário do curso: 00:00 nome do curso: nome do curso link: inscreva-se">00:00 - 00:00 Nome do curso - Inscreva-se</a>
+			  <a href="#" class="list-group-item list-group-item-action list-group-item-warning" alt="Horário do curso: 00:00 nome do curso: nome do curso link: inscreva-se">00:00 - 00:00 Nome do curso - Inscreva-se</a>
+			  <a href="#" class="list-group-item list-group-item-action list-group-item-info" alt="Horário do curso: 00:00 nome do curso: nome do curso link: inscreva-se">00:00 - 00:00 Nome do curso - Inscreva-se</a>
+			  <a href="#" class="list-group-item list-group-item-action list-group-item-light" alt="Horário do curso: 00:00 nome do curso: nome do curso link: inscreva-se">00:00 - 00:00 Nome do curso - Inscreva-se</a>
+			  <a href="#" class="list-group-item list-group-item-action list-group-item-dark" alt="Horário do curso: 00:00 nome do curso: nome do curso link: inscreva-se">00:00 - 00:00 Nome do curso - Inscreva-se</a>
+			</div>	
+
+			<h2>Local</h2>
+			
+			<div class="map-responsive">
+    			<iframe alt="Mapa com o local do evento endereço=endereço do evento"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d386950.6511603643!2d-73.70231446529533!3d40.738882125234106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNueva+York!5e0!3m2!1ses-419!2sus!4v1445032011908" width="905" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+
+			<h2>Inscreva-se</h2>
+			<form>
+			  <div class="form-row">
+			    <div class="form-group col-md-6">
+			      <label for="inputEmail4">Email</label>
+			      <input type="email" class="form-control" id="inputEmail4" placeholder="Email" alt="Campo de cadastro e-mail">
+			    </div>
+			    <div class="form-group col-md-6">
+			      <label for="inputPassword4">Senha</label>
+			      <input type="password" class="form-control" id="inputPassword4" placeholder="Password" alt="Campo de cadastro Senha">
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <label for="inputAddress">Nome</label>
+			    <input type="text" class="form-control" id="inputAddress" placeholder="Nome" alt="Campo de cadastro nome">
+			  </div>
+			  
+			  <button type="submit" class="btn btn-primary">Enviar</button>
+			</form>
+
+			<footer class="page-footer font-small blue pt-4">
+
+			    <!-- Footer Links -->
+			    <div class="container-fluid text-center text-md-left">
+			      <div class="row">
+			        <hr class="clearfix w-100 d-md-none pb-3">
+			        <div class="col-md-3 mb-md-0 mb-3">
+			            <ul class="list-unstyled">
+			              <li>
+			               <p >Cursos Oferecidos</p>
+			              </li>
+			              <li>
+			                <p>Local do evento</p>
+			              </li>
+			              <li>
+			                <p>Certificações</p>
+			              </li>
+			              <li>
+			                <p>Contatos</p>
+			              </li>
+			            </ul>
+
+			          </div>
+			          <div class="col-md-3 mb-md-0 mb-3">
+			            <p>Agenda</p>
+
+			          </div>
+			      </div>
+
+			    </div>
+
+			  </footer>
+		
+	</body>
+
+</html>
