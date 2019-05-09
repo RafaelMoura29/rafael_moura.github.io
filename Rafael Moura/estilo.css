@@ -1,0 +1,38 @@
+.div_principal{
+	text-align: center;
+	padding: 5%;
+}
+
+h2{
+	margin: 0 0 0 14%;
+}
+
+section{
+	padding: 5% 14% 5% 14%;
+}
+.agenda{
+	padding: 5% 14% 5% 14%;
+}
+
+.map-responsive{
+	padding: 5% 0 5% 0;
+	text-align: center;
+}
+
+form{
+	padding: 5% 14% 5% 14%;
+}
+
+footer{
+	background-color: green;
+}
+
+button{
+	margin: 0 0 0 80%;
+	color: white;
+	background-color: darkgreen;
+	border: none;
+}
+body{
+	background-color: white;
+}
